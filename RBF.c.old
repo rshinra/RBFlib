@@ -1,0 +1,53 @@
+#include <stdio.h>
+
+
+struct {
+double A = 0;  // Height
+double B = 0;  // Width
+double Cx = 0; // Center - x
+double Cy = 0; // Center - y
+double D = 0;  // Skew
+} RBF2D;
+struct {
+double A = 0;  // Height
+double B = 0;  // Width
+double Cx = 0;  // Center
+double Cy = 0;  // Center
+double Cz = 0;  // Center
+double D = 0;  // Skew
+} RBF3D;
+
+class{
+  struct {
+    double A = 0;  // Height
+    double B = 0;  // Width
+    double C = 0;  // Center
+    double D = 0;  // Skew
+  } RBF1D;
+  RBF1D *Network[10000] = {NULL};
+  void new_basis(float A, float B, float C, float D){
+    for(int i  = 0, i < 10000 && Network[i];i++);
+    if(i == 10000)
+      exit(2); // Make exit status 2 "Out of New Basis Functions
+    Network[1] = (struct RBFID *) malloc sizeof(struct RBF1D);
+    *Network[i].A = A;
+    *Network[i].B = B;
+    *Network[i].C = C;
+    *Network[i].D = D;
+  }
+ } RBF1DN;
+
+class{
+
+} RBF2DN;
+
+class{
+
+} RBF3DN;
+
+main(){
+  class RBF1DN U;
+  U.new_basis(1,2,3,4)
+  cout << U.Network[0];
+  cout << U.Network[0].B;
+}
